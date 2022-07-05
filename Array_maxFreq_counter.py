@@ -27,6 +27,26 @@ def MaxFreqCounter(arr):
   
   '''
 '''
+def func(arr):
+    n = len(arr)
+    set_x = list(set(arr))
+    set_count = []
+    
+    for i in range(n):
+        if arr[i] in set_x:
+            set_count.append(arr.count(arr[i]))
+    
+    indexM = set_count.index(max(set_count))
+    
+    elem = arr[indexM]        
+    
+    return elem
+    
+TC > O(n)
+'''
+
+
+'''
 Time complexity - O(n)
 
 count = [0]*6
