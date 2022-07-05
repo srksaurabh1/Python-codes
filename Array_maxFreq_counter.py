@@ -18,9 +18,20 @@ def MaxFreqCounter(arr):
             
     return max_count_elem
   
-  ''' 
+# O(n^2) - Time complexity  
+
+''' 
   Or 
   
   max(arr, key=arr.count(arr))
   
   '''
+'''
+Time complexity - O(n)
+
+count = [0]*6
+for t in map(int,input().strip().split()):
+    count[t] += 1
+print(count.index(max(count)))
+
+'''
