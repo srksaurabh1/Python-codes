@@ -1,3 +1,4 @@
+
 def migratoryBirds(arr):
     # Write your code here
     from collections import Counter
@@ -10,3 +11,5 @@ def migratoryBirds(arr):
     return min(m)
     # print(x)    
     # return (max(x, key=x.get))
+
+
