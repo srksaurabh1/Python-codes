@@ -1,0 +1,12 @@
+def migratoryBirds(arr):
+    # Write your code here
+    from collections import Counter
+    x = Counter(arr)
+    m = []
+    for k,v in x.items():
+        if v == max(x.values()):
+            m.append(k)
+    
+    return min(m)
+    # print(x)    
+    # return (max(x, key=x.get))
