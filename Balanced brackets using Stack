@@ -1,0 +1,19 @@
+seq = '({})]'
+open  = ['{','[','(']
+close = ['}',']',')']
+stac = []
+
+for i in seq:
+    if i in open:
+        stac.append(i)
+    elif i in close:
+        pos = close.index(i)
+        if len(stac)> 0 and open[pos] == stac[len(stac)-1]:
+            stac.pop()
+        else:
+            return 'UB'
+
+if len(stac) == 0:
+    return 'B'
+else:
+    return 'UB'
