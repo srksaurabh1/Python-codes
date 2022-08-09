@@ -1,0 +1,11 @@
+int1 = 242
+divisible = 1
+stac = []
+
+while divisible != 0:
+    divisible = int1 // 2
+    remainder = int1 % 2
+    stac.append(remainder)
+    int1 = divisible
+    
+binary = stac[::-1]
