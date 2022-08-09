@@ -1,0 +1,12 @@
+str = 'uaS_sevol_layaP'
+
+rev = str[::-1]
+
+stac = []
+stac_rev = []
+
+for i in str:
+    stac.append(i)
+    
+for i in range(len(stac)):
+    stac_rev.append(stac.pop())
